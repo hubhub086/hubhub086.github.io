@@ -1,0 +1,74 @@
+body {
+    background-color: rgba(206, 205, 205, 0.637);
+}
+input {
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+}
+.weatherTitle {
+    text-align: center;
+    color: rgb(48, 108, 135);
+}
+.mainContainer {
+    width: 793px;
+    margin: 0 auto;
+    background-color: white; 
+    border-color:black;
+    border-width: 10px;
+    padding-left: 20px;
+    opacity: 0.6;
+}
+.dayContainer {
+    /* 设置div并行排列 */
+    display: inline-block;  
+    width: 155px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+}
+.dayContainer:hover {
+    background: #9d9ddc;
+}
+.error{
+    margin: 0 auto;
+    text-align: center;
+    color: #df3750;
+}
+.firstline{
+    display: flex;  
+    justify-content: space-between;
+}
+.lunar{
+    text-align: left;
+}
+.cityShow{
+    text-align: left;
+    color: rgb(57, 149, 149);
+}
+.panel-cover {
+    display: block;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    background: center center no-repeat #666;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    transition: width 0.6s ease
+}           

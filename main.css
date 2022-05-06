@@ -1,0 +1,90 @@
+.panel-cover {
+    display: block;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    background: center center no-repeat #666;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    transition: width 0.6s ease
+}   
+
+.panel-cover-mask{
+    display: block;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    background: center center no-repeat #666;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: width 0.6s ease;
+    -moz-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+    background:center center no-repeat rgba(0,0,0,0.5);
+}
+
+.round_icon{
+    width: 125px;
+    height: 125px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border:1px dashed #ccc;
+    margin: 0 auto;
+}
+
+.button_container{
+    /*居中*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-button {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 20px;
+    color: rgb(255, 255, 255) !important;
+    -moz-animation-delay: 1.9s;
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+    border-radius: 12px;
+    border: 2px solid #ffffff; 
+    opacity: 0.9;
+    float: left;
+	margin-left: 20px;
+
+}
+
+.blog-button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 1;
+}
+
+.main_text{
+    text-align: center; 
+    color: aliceblue;
+}

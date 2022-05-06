@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />    
+    <title>天气查询</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+<!-- <body style="background-image: url('https://cn.bing.com/th?id=OHR.JaliscoAgave_ZH-CN6612544241_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');"> -->
+<body>  
+    <header id="panel" class="panel-cover">
+    <div class="mainContainer">
+        <h1 class="animate__animated animate__backInUp weatherTitle">小雨天气查询</h1>
+        <table>
+            <tr>
+                <th>请输入要查询的城市: </th>
+                <td><input class="city" type="text" /></td>
+                <td><input type="button" value="查询" onclick="search()" /></td>
+            </tr>
+        </table>
+        <br>
+        <div class="error" id="errorNameWarning"></div>
+        <div class="firstline">
+            <div class="lunar"></div>
+            <div class="cityShow" style ="margin-right:60px;"></div>
+        </div>
+        <br>
+        <div class="dayContainer">
+            <div id="today"></div>
+            <img src=" " id="todayImg" />
+            <div id="todaytemp"></div>
+            <div id="todaycondition"></div>
+            <div id="todaywind"></div> 
+        </div><div class="dayContainer">
+            <div id="tomorrow"></div>
+            <img src=" " id="tomorrowImg" />  
+            <div id="tomorrowtemp"></div>
+            <div id="tomorrowcondition"></div>
+            <div id="tomorrowwind"></div>
+        </div><div class="dayContainer">
+            <div id="thirdday"></div>
+            <img src=" " id="thirddayImg" />  
+            <div id="thirddaytemp"></div>
+            <div id="thirddaycondition"></div>
+            <div id="thirddaywind"></div>          
+        </div><div class="dayContainer">
+            <div id="fourthday"></div>
+            <img src=" " id="fourthdayImg" />    
+            <div id="fourthdaytemp"></div>
+            <div id="fourthdaycondition"></div>
+            <div id="fourthdaywind"></div>       
+        </div><div class="dayContainer">
+            <div id="fifthday"></div>
+            <img src=" " id="fifthdayImg"/>   
+            <div id="fifthdaytemp"></div>
+            <div id="fifthdaycondition"></div>
+            <div id="fifthdaywind"></div>
+        </div>
+        <br>
+        <br>
+        <a href="" id="moreInformation" style="display: flex;justify-content: flex-end;;margin-right: 60px;color: #9d9ddc;"></a>
+        <br>
+    </div>
+    </header>
+	<script type="text/JavaScript" src="weather.js"></script>
+</body>
+</html>
